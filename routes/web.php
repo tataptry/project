@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminController;
 
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -19,3 +20,6 @@ Route::get('/Contact', [ContactController::class, 'create']);
 Route::post('/Contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/admin', [AdminController::class, 'create']);
 Route::post('/admin', [AdminController::class, 'store'])->name('admin.store');
+Route::get('/home', function () {
+    return view('Home');
+});
