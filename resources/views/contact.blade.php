@@ -1,3 +1,7 @@
-<div>
-    <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-</div>
+{{-- resources/views/contact.blade.php --}}
+@extends('Layouts.app')
+
+@section('content')
+    <h1>Contact Page</h1>
+    <p>Ini adalah halaman Contact.</p>
+@endsection
