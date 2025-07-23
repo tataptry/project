@@ -27,3 +27,4 @@ use App\Http\Controllers\AdminController;
 // });
 
 Route::get('/users', [UsersController::class, 'index']);
+Route::resource('product', ProductController::class);
