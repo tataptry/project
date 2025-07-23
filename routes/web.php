@@ -3,7 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsersController;
 use App\Http\Controllers\AdminController;
 
 // Route::get('/', function () {
@@ -22,6 +22,8 @@ use App\Http\Controllers\AdminController;
 //Route::get('/admin', [AdminController::class, 'create']);
 //Route::post('/admin', [AdminController::class, 'store'])->name('admin.store');
 
-Route::get('/home', function () {
-    return view('Home');
-});
+//Route::get('/home', function () {
+//    return view('Home');
+// });
+
+Route::get('/users', [UsersController::class, 'index']);
